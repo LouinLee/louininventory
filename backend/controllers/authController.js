@@ -30,8 +30,9 @@ exports.login = async (req, res) => {
         const token = generateToken(user);
         res.cookie("token", token, {
             httpOnly: true,
-            sameSite: "Lax",
-            maxAge: 43200000, // 12 hours
+            sameSite: "None",  // allow cross-site
+            secure: true,      // must use HTTPS
+            maxAge: 43200000,  // 12 hours
         });
 
         return res.status(200).json({ token });
@@ -68,10 +69,10 @@ exports.register = async (req, res) => {
 
 exports.logout = (req, res) => {
     res.clearCookie("token", {
-        httpOnly: false,   // must match how you set it
-        sameSite: "Lax",   // must match
-        secure: false,     // if you set it to true in production, match here
-    });
+        httpOnly: true,
+        sameSite: "None",
+        secure: true,
+    });    
     res.status(200).json({ message: "Logged out" });
 };
 
