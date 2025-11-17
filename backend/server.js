@@ -27,7 +27,8 @@ connectDB();
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://anekaperabot-890420967859.asia-southeast2.run.app",
     credentials: true,
 }));
 app.use(cookieParser()); // Use cookie-parser to parse cookies
