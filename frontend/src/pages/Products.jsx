@@ -192,7 +192,7 @@ const Products = () => {
                     <table className="table table-hover align-middle mb-0">
                         <thead className="text-muted small bg-light">
                             <tr>
-                                <th className="text-center" style={{ width: "10%" }}>Image</th>
+                                {/* <th className="text-center" style={{ width: "10%" }}>Image</th> */}
                                 <th
                                     style={{ width: "55%", cursor: "pointer" }}
                                     onClick={() => handleSort("name")}
