@@ -224,7 +224,7 @@ const Products = () => {
                                 paginatedProducts.map((product) => (
                                     <tr key={product._id} className="align-middle" style={{ height: "70px" }}>
                                         {/* Image */}
-                                        <td className="text-center">
+                                        {/* <td className="text-center">
                                             <div
                                                 className="d-flex justify-content-center align-items-center rounded shadow-sm"
                                                 style={{
@@ -256,7 +256,7 @@ const Products = () => {
                                                     <span className="text-secondary small">None</span>
                                                 )}
                                             </div>
-                                        </td>
+                                        </td> */}
 
                                         {/* Name */}
                                         <td className="fw-semibold text-truncate" style={{ maxWidth: "150px" }}>
