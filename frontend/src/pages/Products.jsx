@@ -194,6 +194,7 @@ const Products = () => {
                             <tr>
                                 {/* <th className="text-center" style={{ width: "10%" }}>Image</th> */}
                                 <th
+                                    className="ps-5"
                                     style={{ width: "55%", cursor: "pointer" }}
                                     onClick={() => handleSort("name")}
                                 >
@@ -259,7 +260,7 @@ const Products = () => {
                                         </td> */}
 
                                         {/* Name */}
-                                        <td className="fw-semibold text-truncate" style={{ maxWidth: "150px" }}>
+                                        <td className="fw-semibold ps-5 text-truncate" style={{ maxWidth: "150px" }}>
                                             {product.name}
                                         </td>
 
